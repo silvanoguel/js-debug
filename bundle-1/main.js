@@ -12,7 +12,7 @@
 
 // ESERCIZIO 1
 function checkAge() {
-    let myAge = 32 ;
+    const myAge = 32;
     let message = '';
 
     if (myAge < 18) {
@@ -20,13 +20,12 @@ function checkAge() {
     } else {
         message = 'Hai più di 18 anni!';
     }
-
+    return message
 }
-checkAge();
+console.log(checkAge());
 
 // 1-mettendo un età mi uscirà il messaggio se sono giovane o se ho più di 18 anni
-// 2-manca il return
-// 3-no
+// 2-manca il return e il console log
 
 
 // ESERCIZIO 2
@@ -55,26 +54,29 @@ addNumbers();
 // 3 - Sì. senza il parseInt con lo riconosce come numero ma come stringa
 
 
-// // ESERCIZIO 4
-// function checkAccess() {
-//     const addresses = [
-//         'mymail@mail.com',
-//         'yourmail@mail.com',
-//         'hermail@mail.com',
-//         'hismail@mail.com',
-//     ];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+// ESERCIZIO 4
+function checkAccess() {
+    const addresses = [
+        'mymail@mail.com',
+        'yourmail@mail.com',
+        'hermail@mail.com',
+        'hismail@mail.com',
+    ];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+    let grantAccess = false;
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = 'true';
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = true;
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
+
+// 1 - controllare se un utente può accedere o no.
+// 2 - sì. togliere le stringhe ai true e false.
