@@ -26,6 +26,7 @@ checkAge();
 
 // 1-mettendo un età mi uscirà il messaggio se sono giovane o se ho più di 18 anni
 // 2-manca il return
+// 3-no
 
 
 // ESERCIZIO 2
@@ -37,17 +38,21 @@ printColorsNumber();
 
 // 1 - stampare la quantità di colori
 // 2 - sì. Length non è scritto correttamente.
+// 3 - no
 
 
+// ESERCIZIO 3
+function addNumbers() {
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+    const total = userNumber + 12;
+ 
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
 
-// // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
-
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+// 1 - stampare la somma del numero che mette l'utente + 12
+// 2 - sì. manca il parseInT
+// 3 - Sì. senza il parseInt con lo riconosce come numero ma come stringa
 
 
 // // ESERCIZIO 4
