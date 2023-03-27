@@ -28,12 +28,16 @@ checkAge();
 // 2-manca il return
 
 
-// // ESERCIZIO 2
-// function printColorsNumber() {
-//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-// }
-// printColorsNumber();
+// ESERCIZIO 2
+function printColorsNumber() {
+     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+     console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+ }
+printColorsNumber();
+
+// 1 - stampare la quantità di colori
+// 2 - sì. Length non è scritto correttamente.
+
 
 
 // // ESERCIZIO 3
